@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "data";
+$password = "Os1k2n2?";
 $dbname_acm = "lsql.intern";
 $dbname_ncm = "lsql.net";
 
