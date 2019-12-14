@@ -1,0 +1,410 @@
+/*
+LeTheme
+Version 1.0
+Copyright © 2019 Leon. All Rights Reserved.
+Made by Leon Developer
+*/
+body {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  font-family: 'Lefont_light';
+  font-weight: normal;
+}
+/* Lefont */
+@font-face {
+  font-family: 'LeFont';
+  src: url('/assets/fonts/lefont.ttc') format('truetype');
+}
+@font-face {
+  font-family: 'LeFont_Light';
+  src: url('/assets/fonts/lefont-light.ttf') format('truetype');
+}
+lefont {
+  font-family: 'LeFont';
+}
+lefont_light {
+  font-family: 'LeFont_Light';
+}
+lefont_icon {
+  /* coming soon */
+}
+@media (max-width: 600px) {
+  .lecontainer_m1{
+      background: white;
+      border-radius: 4px;
+      box-shadow: 0px 0px 18px rgba(63, 81, 181, 0.16);
+      margin: 10px 5px;
+      padding: 20px;
+      border: 1px solid transparent;
+      list-style: none;
+      width: 400px;
+      text-align: justify;
+  }
+  .leheadermessage {
+    margin: 0 150px;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border-radius: 2px;
+    font-size: 13px;
+  }
+  .lesidenav {
+    display: none;
+    padding-top: 50px;
+    padding-bottom: auto;
+    background-color: white;
+    width: 250px;
+    overflow-x: hidden;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+@media (max-width: 400px) {
+  .lecontainer_m1{
+      background: white;
+      border-radius: 4px;
+      box-shadow: 0px 0px 18px rgba(63, 81, 181, 0.16);
+      margin: 10px 5px;
+      padding: 20px;
+      border: 1px solid transparent;
+      list-style: none;
+      width: 300px;
+      text-align: justify;
+  }
+  .leheadermessage {
+    margin: 0 0px;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border-radius: 2px;
+    font-size: 13px;
+  }
+  .lesidenavopen {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: auto;
+    background-color: white;
+    width: 250px;
+    overflow-x: hidden;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+@media (min-width: 600px) {
+  .lecontainer_m1{
+      background: white;
+      border-radius: 4px;
+      box-shadow: 0px 0px 18px rgba(63, 81, 181, 0.16);
+      margin: 10px 5px;
+      padding: 20px;
+      border: 1px solid transparent;
+      list-style: none;
+      width: 600px;
+      text-align: justify;
+  }
+  .leheadermessage {
+    margin: 0;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border-radius: 2px;
+    font-size: 13px;
+  }
+  .lesidenav {
+    display: none;
+  }
+  .lesidenavopen {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: auto;
+    background-color: white;
+    width: 250px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+@media (min-width: 1400px) {
+  .lecontainer_m1{
+      background: white;
+      border-radius: 4px;
+      box-shadow: 0px 0px 18px rgba(63, 81, 181, 0.16);
+      margin: 10px 5px;
+      padding: 20px;
+      border: 1px solid transparent;
+      list-style: none;
+      width: 800px;
+      text-align: justify;
+  }
+  .leheadermessage {
+    margin: 0 400px;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border-radius: 2px;
+    font-size: 13px;
+  }
+  .lesidenav {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: auto;
+    background-color: transparent;
+    width: 250px;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+
+/* leSidenav */
+.lesidenav a {
+  background-color: white;
+  padding: 15px 10px 15px 20px;
+  display: block;
+  font-family: Leryon-Font;
+  font-weight: 100;
+  text-decoration: none;
+  color: gray;
+  border-radius: 0px 100px 100px 0px;
+}
+.lesidenav a:hover {
+  background-color: #F3F3F3;
+  display: block;
+  transition: 0.3s;
+  border-radius: 0px 100px 100px 0px;
+}
+.lesidenav a:focus {
+  -webkit-animation: html 2s ease-in-out;
+  background-color: #E3E3E3;
+}
+.lesidenav .selected {
+  background-color: #E3E3E3;
+  color: #0f83fd;
+  border-radius: 0px 100px 100px 0px;
+}
+
+/* LeButtons */
+.lebutton_m1 {
+  font-family: Leryon-Font;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #0f83fd;
+}
+.lebutton_m1:hover {
+  font-family: Leryon-Font;
+  background-color: #DFDEF7;
+  padding: 5px 10px;
+}
+.lebutton_m1:focus {
+  font-family: Leryon-Font;
+  background-color: #eaecee;
+  padding: 5px 10px;
+}
+.lebutton_m1[disabled] {
+  pointer-events: none;
+  font-family: Leryon-Font;
+  color: gray;
+  background-color: rgb(235, 235, 228);
+  padding: 5px 10px;
+}
+button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+}
+
+/* LeToggle */
+.letoggledr {
+  -webkit-box-flex: 0;
+  box-flex: 0;
+  -webkit-flex-grow: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  height: 24px;
+  margin-left: 8px;
+  text-align: right;
+  width: 36px;
+}
+.letoggle {
+  margin: 15px 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.letogglehan {
+position: absolute;
+visibility: hidden;
+}
+.letogglehan:checked + .letogglecon::before {
+box-shadow: inset 0px 0px 0px 20px #ef1f2f;
+}
+.letogglehan:checked + .letogglecon::after {
+margin-left: 21px;
+}
+.letogglecon {
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+position: relative;
+display: block;
+width: 40px;
+height: 15px;
+background-color: #b0afaf;
+border-radius: 20px;
+}
+.letogglecon::before, .letogglecon::after {
+content: "";
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+}
+.letogglecon::before {
+transition: box-shadow 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+border-radius: 60px;
+}
+.letogglecon::after {
+transition: margin 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+top: -3px;
+width: 20px;
+height: 20px;
+background-image: linear-gradient(#fff, #e3e7e7);
+border-radius: 50px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.letogglehan:disabled + .letogglecon::before {
+  box-shadow: inset 0px 0px 0px 20px #D5D5D5!important;
+  pointer-events: none;
+}
+.letogglehan:disabled + .letogglecon::after {
+  background: #BCBDBC!important;
+  pointer-events: none;
+}
+
+/* LeTooltip */
+letooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+letooltip .tooltiptext, .letooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #252626;
+  color: #fff;
+  text-align: center;
+  padding: 7px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: lighter;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+letooltip .tooltiptext::after, .letooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #252626 transparent transparent transparent;
+}
+letooltip:hover .tooltiptext, .letooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* LeModal */
+lemodal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+lemodal .content {
+  background-color: #fefefe;
+  margin: 10px 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 18px rgba(63, 81, 181, 0.16);
+  border: 1px solid transparent;
+  list-style: none;
+  width: 80%;
+  overflow: auto;
+  height: 80%;
+  border-radius: 4px;
+}
+
+lemodal .close {
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+  float: right;
+}
+lemodal .close:hover,
+lemodal .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* LeNavbar */
+lebrandmark {
+  font-family: Leryon-Font;
+  letter-spacing: -1;
+}
+
+::selection {
+  background-color: #0f83fd;
+  color: white;
+}
+
+
+
+
+/* DEBUG */
+.lecontainer_netside1 {
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0px 0px 18px rgba(63, 81, 181, 0.16);
+  margin: 10px 5px;
+  border: 1px solid transparent;
+  list-style: none;
+  text-align: justify;
+}
+
+.lecontainer_netcenter1 {
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0px 0px 18px rgba(63, 81, 181, 0.16);
+  margin: 10px 5px;
+  padding: 20px;
+  border: 1px solid transparent;
+  list-style: none;
+  text-align: justify;
+}

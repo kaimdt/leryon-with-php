@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{HTTP:Origin} !^$|http(s)?://(www\.)?leon-developer\.com$ [NC]
+RewriteRule \.(woff|eot|ttf)$ - [NC,L]
+RewriteCond %{HTTP_REFERER} !.
+RewriteRule \.(woff|eot|ttf)$ - [F,NC,L]
+Options -Indexes

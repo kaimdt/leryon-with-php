@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'lmusicicon';
+  src:  url('../fonts/lmusicicon.eot?8j2wfx');
+  src:  url('../fonts/lmusicicon.eot?8j2wfx#iefix') format('embedded-opentype'),
+    url('../fonts/lmusicicon.ttf?8j2wfx') format('truetype'),
+    url('../fonts/lmusicicon.woff?8j2wfx') format('woff'),
+    url('../fonts/lmusicicon.svg?8j2wfx#lmusicicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="lmusic-"], [class*=" lmusic-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'lmusicicon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.lmusic-leryon:before {
+  content: "\e900";
+}
+.lmusic-pause:before {
+  content: "\e901";
+}
+.lmusic-play:before {
+  content: "\e902";
+}
+.lmusic-random:before {
+  content: "\e903";
+}
+.lmusic-repeat:before {
+  content: "\e904";
+}
+.lmusic-repeat-1:before {
+  content: "\e905";
+}
+.lmusic-repeat-1-old:before {
+  content: "\e906";
+}
+.lmusic-userimg:before {
+  content: "\e907";
+}
+.lmusic-verifizierter-user:before {
+  content: "\e908";
+}
+.lmusic-volume-mude:before {
+  content: "\e909";
+}
+.lmusic-volume-up:before {
+  content: "\e90a";
+}
+.lmusic-add:before {
+  content: "\e90b";
+}
+.lmusic-arrow-left:before {
+  content: "\e90c";
+}
+.lmusic-backward:before {
+  content: "\e90d";
+}
+.lmusic-bars:before {
+  content: "\e90e";
+}
+.lmusic-bell:before {
+  content: "\e90f";
+}
+.lmusic-bell-slash:before {
+  content: "\e910";
+}
+.lmusic-checked-circle:before {
+  content: "\e911";
+}
+.lmusic-checked-circle-full:before {
+  content: "\e912";
+}
+.lmusic-cog:before {
+  content: "\e913";
+}
+.lmusic-delete:before {
+  content: "\e914";
+}
+.lmusic-exclamation:before {
+  content: "\e915";
+}
+.lmusic-exclamation-circle:before {
+  content: "\e916";
+}
+.lmusic-forward:before {
+  content: "\e917";
+}
+.lmusic-fullheart:before {
+  content: "\e918";
+}
+.lmusic-heart:before {
+  content: "\e919";
+}
+.lmusic-language:before {
+  content: "\e91a";
+}
