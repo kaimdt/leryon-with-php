@@ -1,9 +1,9 @@
 <?php
-$ADOMAIN = "leryon-developer.com";
-$SDOMAIN = ".leryon-developer.com";
-$MEDIASERVER = "https://mevi.leryon-developer.com/";
-$DOMAIN = "http://leryon-developer.com";
-$DOMAINHEADER = "https://leryon-developer.com/";
+$ADOMAIN = "leryon.com";
+$SDOMAIN = ".leryon.com";
+$MEDIASERVER = "https://mevi.leryon.com/";
+$DOMAIN = "http://dev.leryon.com";
+$DOMAINHEADER = "https://dev.leryon.com/";
 
 //Service-Message
 $servicemessage = "Test";
